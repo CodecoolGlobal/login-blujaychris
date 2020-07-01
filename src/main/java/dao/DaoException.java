@@ -1,8 +1,8 @@
 package dao;
 
-public class DaoException extends RuntimeException {
+public class DaoException extends IllegalArgumentException {
 
-    public DaoException(String errorMessage) {
+    DaoException(String errorMessage) {
         super(errorMessage);
     }
 }
